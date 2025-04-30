@@ -13,3 +13,4 @@ Strong retrieval: Tasks 6, 7, and 8 all exceed 0.90 in hit-rate@3, indicating re
 Weaker generation: Task 16 (a generation task) has a BLEU score of only 0.0387, showing room for improvement in that specific setting. Overall Score  The aggregate score across all tasks is approximately 0.642, indicating solid performance overall but with clear opportunities to boost low-scoring generation and some retrieval tasks. 
 
 🖊 We have tried to submit in the late submission, since AIcrowd no longer accepts uploads, we’ve hosted the code here—and in our tests it achieves even higher accuracy than before, with an overall score around 0.642.
+They used a much larger base model, but our computers can't do that. If we use the same basic model as the top 2 team, such as Qwen-7B, our score is 0.64, which is higher than their 0.58. 
