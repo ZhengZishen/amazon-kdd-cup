@@ -18,6 +18,32 @@ User Behavior Alignment: User behavior modeling is of paramount importance in on
 Multi-lingual Abilities: Multi-lingual models are especially desired in online shopping as they can be deployed in multiple marketplaces without re-training. Therefore, we include a separate multi-lingual track, including multi-lingual concept understanding and user behavior alignment, to evaluate how a single model performs in different shopping locales without re-training.
 
 🗃️Results:
+
+1. Minimal Prompt Template (prompts_multi)
+For pure multiple-choice questions, we strip the prompt down to only the essential instruction and answer options. By removing examples, extra context, and system messages, the model focuses exclusively on selecting the correct option index. This lean template reduces token overhead and steers the model toward outputting exactly one of the provided choices.
+2. Single-Token Output (max_new_tokens = 1)
+We constrain the model to generate at most one new token. Since each multiple-choice answer is represented by a single digit or letter, this setting guarantees that the model cannot produce any extraneous text. It both enforces format correctness (no extra words or punctuation) and minimizes inference latency by halting generation immediately after the choice token is emitted.
+
+📊Prompt Engineering Overview
+Use a detailed exemplar-based template (exemplar_no_multi)  
+Model may generate up to 15 tokens (max_new_tokens = 15) 
+ 
+The exemplar template includes six diverse examples:  
+
+Product Definition – Explain “Toggle Switch”  
+Sentiment Choice – Positive/Negative for a Timer product 
+Entity Extraction – Identify “product type”  
+Key-Phrase Extraction – Pull color attributes  
+Title Generation – Create German product titles  
+Material Extraction – List components of vinyl wrap
+
 Our updated code streamlines prompt handling by automatically switching between two lightweight templates based on task type: for multiple-choice questions, it uses a minimal “prompts_multi” template (instruction + query) with max_new_tokens=1 to yield a single-option index instantly; for open-ended tasks, it employs a rich exemplar-driven “exemplar_no_multi” template—featuring six diverse examples—paired with max_new_tokens=15 to guide concise, context-aware responses. This “less-is-more” design cuts prompt overhead, boosts accuracy, and simplifies maintenance, delivering faster, more reliable outputs tailored to each task’s complexity. 
+
+🏆Key Performance Highlights  
+Perfect scores:  NER (task4) achieves a perfect micro-F1 of 1.000. Several multiple-choice tasks (tasks 9, 10, and 11) also reach 1.000 accuracy. 
+Strong retrieval: Tasks 6, 7, and 8 all exceed 0.90 in hit-rate@3, indicating reliable top-3 retrieval.
+Weaker generation: Task 16 (a generation task) has a BLEU score of only 0.0387, showing room for improvement in that specific setting. Overall Score  The aggregate score across all tasks is approximately 0.642, indicating solid performance overall but with clear opportunities to boost low-scoring generation and some retrieval tasks. 
+
+
 
 🖊 We have tried to submit in the late submission, since AIcrowd no longer accepts uploads, we’ve hosted the code here—and in our tests it achieves even higher accuracy than before.
