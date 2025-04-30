@@ -46,4 +46,4 @@ Weaker generation: Task 16 (a generation task) has a BLEU score of only 0.0387, 
 
 
 
-🖊 We have tried to submit in the late submission, since AIcrowd no longer accepts uploads, we’ve hosted the code here—and in our tests it achieves even higher accuracy than before.
+🖊 We have tried to submit in the late submission, since AIcrowd no longer accepts uploads, we’ve hosted the code here—and in our tests it achieves even higher accuracy than before, with an overall score around 0.642.
