@@ -52,24 +52,42 @@ Weaker generation: Task 16 (a generation task) has a BLEU score of only 0.0387, 
 
 Task specific metrics: 
    task_name                 task_type  ... num_samples  overall_score
+   
 0      task1                generation  ...           4       0.872976
+
 1      task2           multiple-choice  ...           4       0.250000
+
 2      task3                 retrieval  ...           4       0.333333
+
 3      task4  named_entity_recognition  ...           8       0.088889
+
 4      task5           multiple-choice  ...           8       0.875000
 5      task6                generation  ...           8       0.052851
+
 6      task7                 retrieval  ...           4       0.750000
+
 7      task8           multiple-choice  ...           8       0.750000
+
 8      task9           multiple-choice  ...           4       1.000000
+
 9     task10           multiple-choice  ...           4       1.000000
+
 10    task11           multiple-choice  ...           8       0.625000
+
 11    task12                   ranking  ...           4       0.745708
+
 12    task13                 retrieval  ...           3       0.666667
+
 13    task14                 retrieval  ...           4       0.333333
+
 14    task15           multiple-choice  ...           8       0.750000
+
 15    task16           multiple-choice  ...           4       0.750000
+
 16    task17                generation  ...           5       0.200106
+
 17    task18           multiple-choice  ...           4       0.500000
+
 
 [18 rows x 5 columns]
 
@@ -81,24 +99,43 @@ Overall Score: 0.5857702226947672
 
 Task specific metrics: 
    task_name                 task_type  ... num_samples  overall_score
+   
 0      task1                generation  ...           4       0.805714
+
 1      task2           multiple-choice  ...           4       0.250000
+
 2      task3                 retrieval  ...           4       0.666667
+
 3      task4  named_entity_recognition  ...           8       1.000000
+
 4      task5           multiple-choice  ...           8       0.750000
+
 5      task6                generation  ...           8       0.358333
+
 6      task7                 retrieval  ...           4       0.750000
+
 7      task8           multiple-choice  ...           8       0.875000
+
 8      task9           multiple-choice  ...           4       1.000000
+
 9     task10           multiple-choice  ...           4       1.000000
+
 10    task11           multiple-choice  ...           8       0.625000
+
 11    task12                   ranking  ...           4       0.873395
+
 12    task13                 retrieval  ...           3       0.333333
+
 13    task14                 retrieval  ...           4       0.333333
+
 14    task15           multiple-choice  ...           8       0.625000
+
 15    task16           multiple-choice  ...           4       0.750000
+
 16    task17                generation  ...           5       0.038746
+
 17    task18           multiple-choice  ...           4       0.500000
+
 
 [18 rows x 5 columns]
 
