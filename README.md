@@ -1,4 +1,4 @@
-# Shopping Concept Understanding" in the Amazon KDD Cup 2024 Challenge
+# Shopping Concept Understanding in the Amazon KDD Cup 2024 Challenge
 
 Author: Zheng Zishen; Zhang Xiang; Li Chenghui; Ke Xianlun
 
