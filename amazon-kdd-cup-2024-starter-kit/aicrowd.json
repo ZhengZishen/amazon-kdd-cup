@@ -1,0 +1,9 @@
+{
+  "challenge_id": "amazon-kdd-cup-24-understanding-shopping-concepts",
+  "authors": [
+    "kk_k"
+
+  ],
+  "gpu": true,
+  "description": "(optional) description about your custom model"
+}

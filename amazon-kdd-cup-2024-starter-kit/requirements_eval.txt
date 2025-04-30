@@ -1,0 +1,9 @@
+# local eval
+pandas
+sentence-transformers
+rouge_score
+evaluate
+sacrebleu==2.4.1
+sacrebleu[ja]
+vllm-nccl-cu12==2.18.1.0.1.0
+vllm

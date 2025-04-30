@@ -1,0 +1,6 @@
+vllm>=0.4.2
+loguru
+sacrebleu[ja]
+evaluate
+rouge_score  
+sentence_transformers
